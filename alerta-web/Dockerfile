@@ -25,4 +25,4 @@ ADD config.js.sh /config.js.sh
 ADD nginx.conf /nginx.conf
 
 EXPOSE 80
-CMD nginx -c /nginx.conf
+CMD /config.js.sh && nginx -c /nginx.conf
