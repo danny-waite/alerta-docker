@@ -19,6 +19,7 @@ ENV ALLOWED_EMAIL_DOMAIN *
 ENV ALLOWED_GITHUB_ORGS *
 ENV GITLAB_URL not-set
 ENV ALLOWED_GITLAB_GROUPS *
+ENV ENDPOINT /api
 
 ADD config.js.sh /config.js.sh
 ADD nginx.conf /nginx.conf
