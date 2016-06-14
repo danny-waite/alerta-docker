@@ -6,17 +6,14 @@ RUN  apk --no-cache --update add py-gunicorn python py-pip libffi musl \
   && apk del build-dependencies
 
 ENV ALERTA_SVR_CONF_FILE /alertad.conf
-ENV BASE_URL /api
+
 ENV AUTH_REQUIRED False
 ENV ADMIN_USERS not-set
 ENV CUSTOMER_VIEWS False
-ENV PROVIDER basic
 ENV CLIENT_ID not-set
 ENV CLIENT_SECRET not-set
 ENV ALLOWED_EMAIL_DOMAIN *
-ENV ALLOWED_GITHUB_ORGS *
-ENV GITLAB_URL not-set
-ENV ALLOWED_GITLAB_GROUPS *
+ENV ALLOWED_ENVIRONMENTS "'production','development'"
 
 ADD alertad.conf.sh /alertad.conf.sh
 
