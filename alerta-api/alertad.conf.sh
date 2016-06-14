@@ -2,7 +2,7 @@
 
 cat >/alertad.conf << EOF
 MONGO_HOST = 'alerta-mongodb'
-DEBUG = True
+DEBUG = False
 SECRET_KEY = '$(< /dev/urandom tr -dc A-Za-z0-9_\!\@\#\$\%\^\&\*\(\)-+= | head -c 32)'
 BASE_URL = '$BASE_URL'
 

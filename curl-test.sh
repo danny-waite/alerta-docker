@@ -4,7 +4,7 @@ curl -s -XPOST -H "Content-type: application/json" http://alerta-api:8000/alert 
   "event": "HW:NIC:FAILED",
   "group": "Hardware",
   "severity": "major",
-  "environment": "Production",
+  "environment": "development",
   "service": [
       "Network"
   ],
