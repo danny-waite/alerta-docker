@@ -13,7 +13,7 @@ ENV CUSTOMER_VIEWS False
 ENV CLIENT_ID not-set
 ENV CLIENT_SECRET not-set
 ENV ALLOWED_EMAIL_DOMAIN *
-ENV ALLOWED_ENVIRONMENTS "'production','development'"
+ENV ALLOWED_ENVIRONMENTS "'*'"
 
 ADD alertad.conf.sh /alertad.conf.sh
 
