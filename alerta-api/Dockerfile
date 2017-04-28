@@ -13,6 +13,7 @@ ENV CUSTOMER_VIEWS False
 ENV CLIENT_ID not-set
 ENV CLIENT_SECRET not-set
 ENV ALLOWED_EMAIL_DOMAIN *
+ENV CORS_ORIGINS not-set
 
 ADD alertad.conf.sh /alertad.conf.sh
 
