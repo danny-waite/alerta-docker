@@ -1,7 +1,7 @@
 #!/bin/ash
 
 cat >/alertad.conf << EOF
-MONGO_URI = $MONGO_URI
+MONGO_URI = '$MONGO_URI'
 DEBUG = False
 SECRET_KEY = '$(< /dev/urandom tr -dc A-Za-z0-9_\!\@\#\$\%\^\&\*\(\)-+= | head -c 32)'
 BASE_URL = '$BASE_URL'
