@@ -2,7 +2,7 @@ FROM alpine:3.4
 
 RUN  apk --no-cache --update add py-gunicorn python py-pip libffi musl \
   && apk --no-cache --update add --virtual build-dependencies python-dev build-base libffi-dev \
-  && pip install alerta-server \
+  && pip install alerta-server nats-client \
   && apk del build-dependencies
 
 ENV ALERTA_SVR_CONF_FILE /alertad.conf
